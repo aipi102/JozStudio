@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joz | 3D Edits for Roblox Barbie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kinkee:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Kinkee', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            overflow-x: hidden;
+            position: relative;
+            height: 100vh; /* Полная высота экрана */
+        }
+
+        /* Задний фон с сердцами и искрами */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('hearts w_ sparkles (no rainbow).mp4'); /* Здесь укажите путь к своему изображению */
+            background-repeat: repeat;
+            background-size: cover;
+            animation: moveBackground 20s linear infinite;
+            z-index: -1; /* Помещает фон на задний план */
+        }
+
+        /* Анимация для плавного движения фона */
+        @keyframes moveBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: -1000px -1000px; }
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            color: #ff4081;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .examples {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .example {
+            background-color: #1e1e1e;
+            border: 2px solid #ff4081;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s ease-in-out;
+            width: 300px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .example:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 64, 129, 1);
+        }
+
+        .example video {
+            width: 100%;
+            display: block;
+        }
+
+        .pricing {
+            text-align: center;
+            background-color: #1f1f1f;
+            color: #ff4081;
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .pricing h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .pricing p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1f1f1f;
+            color: #ff4081;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            color: #ff4081;
+            font-size: 1.5em;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-links a:hover {
+            color: #e0e0e0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 10px rgba(255, 64, 129, 0.6);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(255, 64, 129, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div> <!-- Фон с сердцами и искрами -->
+    <header>
+        <h1>3D Edits</h1>
+        <p>jozdoly</p>
+    </header>
+
+    <div class="container">
+        <section class="section examples">
+            <h2>Portfolio</h2>
+            <div class="examples">
+                <div class="example">
+                    <video src="1.mp4" autoplay loop muted></video>
+                </div>
+                <div class="example">
+                    <video src="2.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="examples">
+                <div class="example">
+                    <video src="3.mp4" autoplay loop muted></video>
+                </div>
+                <div class="example">
+                    <video src="4.mp4" autoplay loop muted></video>
+                </div>
+                <div class="example">
+                    <video src="5.mp4" autoplay loop muted></video>
+                </div>
+                <div class="example">
+                    <video src="6.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+        </section>
+
+        <section class="section pricing">
+            <h2>Pricing</h2>
+            <p>500 RBX</p>
+        </section>
+
+        <section class="section social-links">
+            <h2>Follow me</h2>
+            <a href="https://www.tiktok.com/@jozdoly" target="_blank">TikTok</a>
+            <a href="https://discordapp.com/users/1190597687003848704/" target="_blank">Discord</a>
+            <a href="https://www.roblox.com/users/3641695517/profile" target="_blank">Roblox</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Joz | All rights reserved</p>
+    </footer>
+</body>
+</html>
